@@ -1,1 +1,1 @@
-web: node --trace-warnings --max-old-space-size=256 ./index.js
+web: node --expose-gc --optimize_for_size --max-old-space-size=9200 ./index.js
