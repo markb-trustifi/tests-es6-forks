@@ -1,0 +1,24 @@
+{
+  "name": "tests-es6-forks",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.17.0",
+    "npm": "8.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markb-trustifi/tests-es6-forks.git"
+  },
+  "exports": "./index.js",
+  "type": "module",
+  "scripts": {
+    "npm-install": "npm install",
+    "start": "node --trace-warnings --max-old-space-size=256 index.js"
+  },
+  "author": "Trustifi",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^16.11.7"
+  }
+}
