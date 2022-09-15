@@ -5,7 +5,7 @@ import {fork} from 'node:child_process';
 const options = {
     stdio: [ 'pipe', 'pipe', 'pipe', 'ipc' ],
     env: Object.assign({}, process.env, { NODE_DEBUG: '*' }),
-    //execArgv: ['--inspect']
+    execArgv: ['--inspect']
 };
 
 const child = fork('./childFork.js',['param'], options);
